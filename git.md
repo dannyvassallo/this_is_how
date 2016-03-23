@@ -182,8 +182,18 @@ I can also add heroku endpoints to push to manually, if I already have a Heroku 
 ```git remote add heroku git@heroku:peaceful:warzone-123123```
 
 
-
+***
+```
+$ git push origin master
+To git@github.com:ntuvera/this_is_how.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:ntuvera/this_is_how.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 [Will Update as I remember or run into more errors]
+```
 
-
-
+Will update after pushing up other changes.
