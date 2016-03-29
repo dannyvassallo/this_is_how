@@ -44,10 +44,9 @@ It's come to my attention that over the course of coding, somehow my ```.gitconf
 
 Going forward let's fix your future commits.  Each commit message references a "name" and email.  I use my Github username as my name and you **must** use the email you signed up with Github.
 
-
-```/Users/nate/.gitconfig```
-
 ```
+/Users/nate/.gitconfig...
+
 [user]
 	name = ntuvera (should match your github username)
 	email = ntuvera@gmail.com (shoudl match your email you signed up with)
