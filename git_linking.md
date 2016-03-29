@@ -35,7 +35,7 @@ We've told Github, "Hey, I've done all this work, give me credit for it so I can
 
 (http://github.com/urltoimportantcode)
 
-It's come to my attention that over the course of coding, somehow my `.gitconfig` settings we're changed without my knowledge.  I have no narrowed down the cause of this, but I can clearly see the effects of this change.  
+It's come to my attention that over the course of coding, somehow my ```.gitconfig``` settings we're changed without my knowledge.  I have no narrowed down the cause of this, but I can clearly see the effects of this change.  
 
 
 
@@ -51,7 +51,6 @@ Going forward let's fix your future commits.  Each commit message references a "
 [user]
 	name = ntuvera (should match your github username)
 	email = ntuvera@gmail.com (shoudl match your email you signed up with)
-
 ```
 
 shortcut commands to change your "name" and email:
