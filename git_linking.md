@@ -56,9 +56,9 @@ Going forward let's fix your future commits.  Each commit message references a "
 
 shortcut commands to change your "name" and email:
 
-`git config --global user.name "ntuvera"`
+```git config --global user.name "ntuvera"```
 
-`git config --global user.email ntuvera@gmail.com`
+```git config --global user.email ntuvera@gmail.com```
 
 
 #### Fixing old Commits
@@ -79,7 +79,7 @@ git filter-branch -f --commit-filter '
         fi' HEAD
 ```
 
-The above command (yes that's one command), will search through all the commits in your `/.git` folder and search for `$GIT_COMITTER_NAME` and it should be set to the offending name.  After the `then` you will be reassigning the `Commiter_name`, `author_name`, `commuter_email`, `commuter_name`
+The above command (yes that's one command), will search through all the commits in your ```/.git``` folder and search for ```$GIT_COMITTER_NAME``` and it should be set to the offending name.  After the `then` you will be reassigning the ```Commiter_name```, ```author_name```, ```commuter_email```, `commuter_name`
 
 
 ![example output of script](assets/images/Script_example.png "example of script running and then force pushing to repo")
@@ -91,11 +91,11 @@ Within the if statement, you'll need to find keep track of what is wrong with yo
 ![this looks wrong](assets/images/Commit_specific_error.png "In this case my email and name are both wrong")
 
 You can see that this doesn't look right, but I can see the GIT_AUTHOR_NAME is my full name, when it should be my Github username.  Either way, this is the filter point we're going to use.
-The first `GIT_COMMITTER_NAME` will equal my full name, or whatever is the incorrect name.  This situation can also be aimed using an email, but I can quickly and easily see my Username is not as expected, so we'll procede from there.
+The first ```GIT_COMMITTER_NAME``` will equal my full name, or whatever is the incorrect name.  This situation can also be aimed using an email, but I can quickly and easily see my Username is not as expected, so we'll procede from there.
 
-`GIT_COMIITER_NAME` & `GIT_AUTHOR_NAME` should equal your Github User name.
+```GIT_COMIITER_NAME``` & ```GIT_AUTHOR_NAME``` should equal your Github User name.
 
-`GIT_COMMITER_EMAIL` & `GIT_AUTHOR_EMAIL` should equal the email you signed with Github.
+```GIT_COMMITER_EMAIL``` & ```GIT_AUTHOR_EMAIL``` should equal the email you signed with Github.
 <BR>
 <BR>
 <BR>
