@@ -63,6 +63,14 @@ shortcut commands to change your "name" and email:
 
 Per a Repo You'll need to collect Offending Emails and User Names
 
+Start by checking out to the master branch and pullin ghte most up to date information (incase changes were made while you were away, we'll be force pushing, you don't want o overwite your other collaborators' hard work)
+```
+git checkout master
+git pull origin master
+```
+
+Now we should be up to date with the repo and we'll be changing YOUR commits.
+
 ```
 git filter-branch -f --commit-filter '
         if [ "$GIT_COMMITTER_NAME" = "Nate Tuvera" ];
@@ -94,10 +102,15 @@ The first ```GIT_COMMITTER_NAME``` will equal my full name, or whatever is the i
 ```GIT_COMIITER_NAME``` & ```GIT_AUTHOR_NAME``` should equal your Github User name.
 
 ```GIT_COMMITER_EMAIL``` & ```GIT_AUTHOR_EMAIL``` should equal the email you signed with Github.
-<BR>
-<BR>
-<BR>
 
+The above ```git filter-branch``` command has gone through all your commits and changed the author and commiter information.  On your local machine everything should be correct.  You can run ```git log``` and check to see that your commits no longer contain the offending name and it should be replaced by your github user name.
+
+The last step is to force push ```git push -f origin master``` to Github and it will rewrite your commit messages with the correct identification.
+
+Make sure you let your fellow collaborators know to do a ```git pull```, so they're local commit messages reflect your changes.  Otherwise, if they push some new changes, it will contain your old erroneous commit identification.
+
+#### You should be set, now go code or take a victory nap!
+I will update this as needed, or if you have questions Submit an issue on the repo :)
 ***
 
 --- in progress ---
