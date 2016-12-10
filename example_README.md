@@ -1,4 +1,4 @@
-#Name of you App/Project
+#Name of your App/Project
 <BR>
 
 
